@@ -1,0 +1,16 @@
+:root {
+    --header-height: 40px;
+    --theme-color: #0089d0; /* ÷вет декоративных элементов */
+    --light-theme-color: #5dddfd; /* ÷вет декоративных элементов */
+    --main-color: #000000; /* ќсновной цвет текста */
+    --background-color: #ffffff; /* ÷вет фона */
+    --gray-color: #adb5bd; /* ÷вет фона */
+    --light-gray-color: #f5f5f5; /* ÷вет фона */
+    --ok-color: chartreuse; /* ÷вет нормальной работы */
+    --error-color: red; /* ÷вет ошибки */
+    --transition: 0.5s;
+    /* ƒл€ dataTables */
+    --odd: #f8f8f8;
+    --even: #fdfdfe;
+    --contrast: rgba(0,0,0,.025);
+}

@@ -1,0 +1,81 @@
+.authorization{
+    z-index: 100;
+    position: absolute;
+    top: 4px;
+    right: 100px;
+    border: 3px solid var(--background-color);
+    width: 26px;
+    height: 26px;
+    border-radius: 26px;
+    background-color: var(--background-color);
+    overflow: hidden;
+}
+.authorization:hover{
+    transition: 0.25s;
+    box-shadow: 0 0 0 0.2rem var(--light-theme-color);
+}
+.authorization span{
+    position: absolute;
+    top: 3px;
+    right: 8px;
+    /*border: 1px solid #333;*/
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+}
+.authorization span::before {
+    position: absolute;
+    content: '';
+    top: 12px;
+    right: -10px;
+    /*border: 1px solid #333;*/
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+}
+
+.login{
+    transition: var(--transition);
+    z-index: 90;
+    align-content: center;
+    position: absolute;
+    top: 4px;
+    right: 100px;
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    background-color: var(--background-color);
+    overflow: hidden;
+}
+.login-content{
+    width: 1000px;
+    position: absolute;
+    margin: 6px;
+    margin-left: 12px;
+    color: #000;
+    font-size: 14px;
+    overflow: hidden;
+}
+.login-content input{
+    border: 2px solid transparent;
+    width: 152px;
+}
+.login.active{
+    transition: var(--transition);
+    width: 666px; /* Why? For the Glory of Satan of course! :3 */
+}
+
+.registration{
+    justify-content: space-around;
+    z-index: 9999;
+    color: var(--main-color);
+    background-color: var(--background-color);
+    transition: 0.5s;
+}
+.registration input{
+    padding: 5px 8px;
+    height: 20px; !important;
+    width: 220px; !important;
+}

@@ -1,0 +1,126 @@
+.menu-btn{
+    transition: 0.5s;
+    content: "MENU";
+    width: 38px;
+    height: 38px;
+    background-color: var(--theme-color);
+    border: 1px solid var(--theme-color);
+    position: absolute;
+    cursor: pointer;
+}
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+    content: "";
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    top: 50%; margin-top: -1px;
+    left: 50%; margin-left: -10px;
+    width: 20px;
+    height: 2px;
+    color: var(--main-color);
+    background-color: var(--background-color);
+}
+.menu-btn span::before {
+    transform: translateY(-5px);
+}
+.menu-btn span::after {
+    transform: translateY(5px);
+}
+.menu-btn.active span{
+    transition: 0.5s;
+    background-color: transparent;
+}
+.menu-btn.active span::before {
+    transform: rotate(-45deg);
+}
+.menu-btn.active span::after {
+    transform: rotate(45deg);
+}
+.menu{
+    color: #333;
+    position: fixed;
+    left: 0;top: 40px;
+    z-index: 99;
+    width: 258px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    transition: 0.5s;
+    transform: translateX(-100%);
+}
+.menu.active{
+    transform: translateX(0%);
+}
+.menu-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 50%;
+    flex-direction: column;
+}
+.menu-list a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.side-div {
+    /*justify-content: space-around;*/
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    right: 0; top: 40px; bottom: 0;
+    z-index: 99;
+    width: 100%;
+    /*height: 100vh;*/
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-color);
+    transition: 0.5s;
+    transform: translateX(100%);
+}
+.side-div.active{
+    transition: 0.5s;
+    width: 100%;
+    transform: translateX(0%);
+}
+.side-div-btn {
+    top: 10px;
+    right: 10px;
+    border: 1px solid #333;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    position: fixed;
+}
+.side-div-btn span::before,
+.side-div-btn span::after {
+    position: absolute;
+    top: 50%; margin-top: -1px;
+    left: 50%; margin-left: -10px;
+    width: 20px;
+    height: 2px;
+    background-color: crimson;
+}
+.side-div-btn span::before,
+.side-div-btn span::after {
+    content: '';
+    display: block;
+    transition: 0.5s;
+}
+.side-div-btn span::before {
+    transform: rotate(-45deg);
+    width: 20px;
+    /*transform-origin: left bottom;*/
+    /*transform: translateY(-5px);*/
+}
+.side-div-btn span::after {
+    transform: rotate(45deg);
+    width: 20px;
+    /*transform-origin: left top;*/
+    /*transform: translateY(5px);*/
+}

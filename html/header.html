@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Датчики</title>
+
+    <script type="text/javascript" src="libs/JQuery3.5.0.js"></script>
+    <script type="text/javascript" src="libs/jQuery_UI_v1.12.1.js"></script>
+    <script type="text/javascript" src="libs/jQuery_Cookie_v1.4.1.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="libs/DataTables-1.10.21/css/jquery.dataTables.css"/> <!-- Подключение dataTables -->
+    <script type="text/javascript" src="libs/DataTables-1.10.21/js/jquery.dataTables.js"></script> <!-- Подключение dataTables -->
+
+    <script type="text/javascript" charset="utf8" src="libs/lightslider-master/src/js/lightslider.js"></script> <!-- Подключение lightslider -->
+    <link type="text/css" rel="stylesheet" href="libs/lightslider-master/src/css/lightslider.css" /> <!-- Подключение lightslider -->
+
+    <link rel="stylesheet" type="text/css" href="css/onoffswitch.css"> <!-- Подключение CSS файла -->
+
+    <script type="text/javascript" src="js/tabs.js"></script>
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/styling.css">
+    <link rel="stylesheet" href="css/checkbox.css">
+    <link rel="stylesheet" href="css/tabs.css">
+    <link rel="stylesheet" href="css/authorization.css">
+    <script type="text/javascript" src="js/authorization.js"></script>
+    <script type="text/javascript" src="js/dayNight.js"></script>
+    <script type="text/javascript" src="js/mainDataTable.js"></script>
+    <script type="text/javascript" src="js/filter.js"></script>
+</head>
+<body>
+<header>
+    <div class="header">
+        <a class="menu-btn"><span></span></a>
+        <span style="z-index: 9999; margin-left: 40px"><img id="maiLogo" src="source/mai.gif" width="40px"></span>
+        <span style="margin-left: 50px; white-space: nowrap">МАИ - Приборы и датчики</span>
+    </div>
+
+    <div class="authorization">
+        <span></span>
+    </div>
+    <div class="login">
+        <div class="login-content">
+            <label>Логин </label><input id="login" type="text" placeholder="Введите логин">
+            <label>Пароль </label><input id="password" type="password" placeholder="Введите пароль">
+            <a href="reg.html"><button id="authorization">Войти</button></a>
+            <button id="registration">Зарегестрироваться</button>
+        </div>
+    </div>
+
+    <div class="onoffswitch" style="z-index: 9999">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="dayNight" checked>
+        <label class="onoffswitch-label" for="dayNight">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+</header>
+</body>
+</html>

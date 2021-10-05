@@ -1,0 +1,72 @@
+/*input[type=checkbox]{*/
+    /*background-color: var(--ok-color);*/
+    /*color: var(--ok-color);*/
+/*}*/
+.custom-checkbox{
+    position: absolute;
+    /*z-index: -1;*/
+    opacity: 0;
+}
+.custom-checkbox+label{
+    position: relative;
+}
+.custom-checkbox+label{
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.custom-checkbox+label::before{
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid var(--gray-color);
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.custom-checkbox:checked+label::before{
+    position: relative;
+    /*align-content: center;*/
+    color: var(--main-color);
+    /*content: "\2713";*/
+    /*border-color: #0b76ef;*/
+    background-color: var(--theme-color);
+}
+.custom-checkbox:checked+label::after{
+    position: absolute;
+    content: "";
+    display: inline-block;
+    height: 6px;
+    width: 9px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;transform: rotate(-45deg);
+    left: 4px;
+    top: 3px;
+}
+/* Стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before{
+    border-color: var(--light-theme-color);
+}
+/* Стили для активного состояния чекбокса (при нажатии на него) */
+.custom-checkbox:not(:disabled):active+label::before{
+    border-color: var(--light-theme-color);
+    background-color: var(--light-theme-color);
+}
+/*!* Стили для чекбокса, находящегося в фокусе *!*/
+/*.custom-checkbox:focus+label::before{*/
+    /*box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);*/
+/*}*/
+/* Стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox:not(:checked)+label::before {
+    border-color: #80bdff;
+}
+/* Стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled+label::before {
+    border-color: #e9ecef;
+}

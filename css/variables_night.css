@@ -1,0 +1,15 @@
+:root {
+    --theme-color: #0089d0; /* ÷вет декоративных элементов */
+    --light-theme-color: #5dddfd; /* ÷вет декоративных элементов */
+    --main-color: #bababa; /* ќсновной цвет текста */
+    --background-color: #3c3f41; /* ÷вет фона */
+    --gray-color: #adb5bd; /* ÷вет фона */
+    --light-gray-color: #3c3f41; /* ÷вет фона */
+    --ok-color: chartreuse; /* ÷вет нормальной работы */
+    --error-color: red; /* ÷вет ошибки */
+    --transition: 0.5s;
+    /* ƒл€ dataTables */
+    --odd: #414141;
+    --even: #4a4a4b;
+    --contrast: rgba(255,255,255,.05);
+}

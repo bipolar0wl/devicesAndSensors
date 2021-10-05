@@ -1,0 +1,15 @@
+.ui-widget-content {
+     background: transparent;
+ }
+.ui-widget.ui-widget-content {
+    /*border: 1px solid #c5c5c5;*/
+    border: 1px solid var(--gray-color);
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    background: var(--light-gray-color);
+    font-weight: normal;
+    color: #454545;
+}
+.ui-widget-header {
+    background: rgba(0, 0, 0, .25);
+}

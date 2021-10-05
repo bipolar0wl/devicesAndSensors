@@ -1,0 +1,17 @@
+body{
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+::-webkit-scrollbar{
+  width: 8px;
+  background: var(--contrast);
+}
+::-webkit-scrollbar-track{
+  background: var(--light-gray);
+}
+::-webkit-scrollbar-thumb{
+  background: var(--gray-color);
+}
+::-webkit-scrollbar-thumb:hover{
+  background: var(--theme-color);
+}
